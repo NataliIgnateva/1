@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=MonteCarlo&family=Style+Script&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-fon"></div>
+  <header class="header">
+    <div class="container">
+      <ul class="navbar-list">
+        <li><a class="navbar-link" href="../index.html">Главная</a></li>
+        <li><a class="navbar-link" href="articles.html">Статьи</a></li>
+        <li><a class="navbar-link" href="catalog.html">Каталог</a></li>
+        <li><a class="navbar-link" href="contacts.html">Контакты</a></li>
+        <li><a class="navbar-link" href="gallery.html">Галерея</a></li>
+        <li><a class="navbar-link" href="page-nav.html">Навигация</a></li>
+        <li><a class="navbar-link" href="registration.html">Регистрация</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="container content">
+    <h1>Контакты</h1>
+
+    <div class="contacts-info">
+      <h2>Новая почта. Отделение №3 </h2>
+      <p> ул. Козацкая 19<br>
+        г. Энергодар<br>
+        Запорожская обл.<br>
+        71501<br>
+      </p>
+    </div>
+    <div class="contacts-info">
+      <h2>График работы </h2>
+      <p>Пн. 09:00–19:00<br>
+        Вт. 09:00–19:00<br>
+        Ср. 09:00–19:00<br>
+        Чт. 09:00–19:00<br>
+        Пт. 09:00–19:00<br>
+        Сб. 09:00–17:00<br>
+        Вс. 10:00–15:00<br>
+      </p>
+    </div>
+
+    <div class="contacts-info">
+      <h2>Как нас найти</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.3334767976344!2d34.65625941514813!3d47.48341660447334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dcbf5cb52b6239%3A0xeab8645b2e49a695!2z0J3QvtCy0LDRjyDQn9C-0YfRgtCwLiDQn9C-0YjRgtC-0LLQtSDQstGW0LTQtNGW0LvQtdC90L3RjyDihJYzLiDQrdC90LXRgNCz0L7QtNCw0YA!5e0!3m2!1sru!2sua!4v1628104233434!5m2!1sru!2sua"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+
+    <form action="contacts.php" method="post">
+      <fieldset>
+        <legend>Обратная связь</legend>
+        <div class="form-group">
+          <label for="name">Имя:</label>
+          <input class="capitalized" id="name" name="name" type="text" placeholder="Введите имя" autofocus>
+        </div>
+        <div class="form-group">
+          <label for="tel">Телефон:</label>
+          <input id="tel" name="tel" type="tel" pattern="+380-[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{2}"
+            placeholder="+380-XX-XX-XXX-XX">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" placeholder="e-mail">
+        </div>
+        <div class="form-group">
+          <label for="text">Вопрос:</label>
+          <textarea id="text" name="question" cols="50" rows="8" placeholder="Задайте нам свой вопрос"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="container">&copy; Natali Ignateva</div>
+  </footer>
+</body>
+
+</html>

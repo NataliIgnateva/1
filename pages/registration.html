@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=MonteCarlo&family=Style+Script&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-fon"></div>
+  <header class="header">
+    <div class="container">
+      <ul class="navbar-list">
+
+        <li><a class="navbar-link" href="../index.html">Главная</a></li>
+        <li><a class="navbar-link" href="articles.html">Статьи</a></li>
+        <li><a class="navbar-link" href="catalog.html">Каталог</a></li>
+        <li><a class="navbar-link" href="contacts.html">Контакты</a></li>
+        <li><a class="navbar-link" href="gallery.html">Галерея</a></li>
+        <li><a class="navbar-link" href="page-nav.html">Навигация</a></li>
+        <li><a class="navbar-link" href="registration.html">Регистрация</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="container content">
+    <h1>Регистрация</h1>
+    <form action="register.php" method="post">
+
+      <fieldset>
+        <legend>#1 Базовые поля</legend>
+        <div class="form-group">
+          <label for="femeli">Фамилия</label>
+          <input class="capitalized" id="femeli" name="femeli" placeholder="Фамилия" type="text">
+        </div>
+        <div class="form-group">
+          <label for="firstname">Имя</label>
+          <input class="capitalized" id="firstname" required name="firstname" placeholder="Имя" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Отчество</label>
+          <input class="capitalized" id="lastname" name="lastname" placeholder="Отчество" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="pasw">Пароль</label>
+          <input id="pasw" name="pasw" placeholder="Пароль" type="password">
+        </div>
+        <div class="form-group">
+          <label for="email">Почта</label>
+          <input id="email" name="email" placeholder="Почта" type="email">
+        </div>
+        <div class="form-group">
+          <label for="url">Адрес сайта</label>
+          <input id="url" name="url" type="url" value="http://mysite.name">
+        </div>
+        <div class="form-group">
+          <label for="date">Дата рождения:</label>
+          <input id="date" name="date" type="date">
+        </div>
+        <div class="form-group">
+          <label for="file">Добавить фотографию:</label>
+          <input id="file" name="file" type="file">
+        </div>
+        <div class="hidden"><label>Скрытое поле
+            <input type="hidden"></label></div>
+
+      </fieldset>
+      <fieldset>
+        <legend>#2 Выбрать пол</legend>
+
+        <div class="form-group-sm">
+          <input id="gender-male" type="radio" name="gender" value="male">
+          <label for="gender-male">Мужской</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="gender-female" type="radio" name="gender" value="female">
+          <label for="gender-female">Женский</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>#3 Выбрать предпочитаемую кухню:</legend>
+
+        <div class="form-group-sm">
+          <input id="ua" checked name="kitchen" value="ukrainian" type="checkbox">
+          <label for="ua">Украинская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="gr" name="kitchen" value="georgian" type="checkbox">
+          <label for="gr">Грузинская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="it" name="kitchen" value="italian" type="checkbox">
+          <label for="it">Итальянская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="fr" name="kitchen" value="french" type="checkbox">
+          <label for="fr">Французская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="us" name="kitchen" value="american" type="checkbox">
+          <label for="us">Американская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="jp" name="kitchen" value="japanese" type="checkbox">
+          <label for="jp">Японская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="ch" name="kitchen" value="chinese" type="checkbox">
+          <label for="ch">Китайская</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>#4 О себе в произвольной форме</legend>
+        <div class="form-group">
+          <label for="txt">О себе:</label>
+          <textarea placeholder="Введите информацию о себе..." name="txt" id="txt" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>#5</legend>
+
+        <div class="form-group"> <button class="btn" type="submit">Зарегистрироваться</button></div>
+        <div class="form-group"><button class="btn" type="reset">Очистить форму</button></div>
+
+      </fieldset>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="container">&copy; Natali Ignateva</div>
+  </footer>
+</body>
+
+</html>
